@@ -59,3 +59,38 @@ git push -u origin main
 Step 6: Verify the Changes on GitHub
 Go to your GitHub repository in your browser.
 Refresh the page to see the files you just pushed.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+When you've made changes to a specific file in VS Code and want to push those changes to GitHub, follow these steps:
+
+Step 1: Stage the Changes
+Go to the Source Control panel in VS Code (icon that looks like a branch).
+
+You should see the modified file listed here. Click the + icon next to the file name to stage only that file.
+
+Or, if you prefer using the terminal, run:
+
+bash
+Copy code
+git add path/to/your-file
+Replace path/to/your-file with the actual file path.
+
+Step 2: Commit the Changes
+In the Source Control panel, type a commit message describing your changes (e.g., "Update configuration in ec2.tf") and click the checkmark to commit.
+
+Or, in the terminal, use:
+
+bash
+Copy code
+git commit -m "Your commit message here"
+Step 3: Push the Changes to GitHub
+Open the Terminal in VS Code (if not already open) and push the committed changes to GitHub:
+bash
+Copy code
+git push
+This will push your latest commit (containing the specific file change) to the main branch on GitHub.
+
+Step 4: Verify the Changes on GitHub
+Go to your GitHub repository in your browser.
+Refresh the page to confirm that the updated file has been pushed successfully.
