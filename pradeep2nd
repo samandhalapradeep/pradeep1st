@@ -1,0 +1,7 @@
+2nd push 
+
+git init
+git remote add origin <ssh>
+git branch -m main or master
+git commit -m "write anything"
+git push -u origin main
